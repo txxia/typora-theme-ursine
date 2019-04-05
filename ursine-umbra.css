@@ -91,6 +91,18 @@
   --primary-btn-text-color: #fff; /* primary text color for buttons */
   --accent-color: #3c3c3c; /* background accent color */
 
+  --bold-color: rgb(189, 236, 217);
+  --italic-color: rgb(249, 255, 196);
+  --math-color: rgb(167, 223, 255);
+  --inline-code-color: rgb(255, 167, 167);
+  --highlight-color: #ffe600;
+  --h1-color: rgb(255, 136, 0);
+  --h2-color: rgb(255, 159, 50);
+  --h3-color: rgb(255, 185, 104);
+  --h4-color: rgb(255, 206, 149);
+  --h5-color: rgb(221, 199, 176);
+  --h6-color: rgb(163, 163, 163);
+
   --window-border: 1px solid #16161a; /* border for sidebar, etc*/
 
   --active-file-bg-color: #16161a; /* background color if list item in file tree or file list*/
@@ -136,34 +148,40 @@ h6 {
   font-family: "Adelle";
 }
 
-h1 {
+h1 > * {
   font-size: 1.8rem;
   margin: 1rem 0;
+  color: var(--h1-color);
 }
 
-h2 {
+h2 > * {
   font-size: 1.4rem;
   margin: 0.7rem 0;
+  color: var(--h2-color);
 }
 
-h3 {
+h3 > * {
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  color: var(--h3-color);
 }
 
-h4 {
+h4 > * {
   font-size: 1.1rem;
   margin: 0.2rem 0;
+  color: var(--h4-color);
 }
 
-h5 {
+h5 > * {
   font-size: 1rem;
   margin: 0;
+  color: var(--h5-color);
 }
 
-h6 {
+h6 > * {
   font-size: 1rem;
   margin: 0;
+  color: var(--h6-color);
 }
 
 p {
@@ -180,7 +198,7 @@ del {
 
 mark {
   padding: 2px 1px;
-  background: #fee405;
+  background: var(--highlight-color);
 }
 
 /* Writing area -> line height */
@@ -286,6 +304,7 @@ code,
 tt {
   font-family: "Cousine", monospace;
   font-size: 1rem;
+  color: var(--inline-code-color);
 }
 
 code {
@@ -484,8 +503,22 @@ span.md-def-split {
 }
 
 /* Math */
-.md-math-tex {
+.md-math-tex, .md-math-container {
   font-size: 1.3rem;
+  color: var(--math-color);
+}
+
+/* Bold */
+b,
+dt,
+strong {
+  color: var(--bold-color);
+  font-weight: 700;
+}
+
+/* Italic */
+em {
+  color: var(--italic-color);
 }
 
 /* Inline styles */
