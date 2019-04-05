@@ -124,7 +124,7 @@ body {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h1,
@@ -481,6 +481,11 @@ span.md-def-split {
 /* Image meta text */
 #write .md-image > .md-meta {
   color: var(--meta-content-color);
+}
+
+/* Math */
+.md-math-tex {
+  font-size: 1.3rem;
 }
 
 /* Inline styles */
