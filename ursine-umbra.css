@@ -301,10 +301,17 @@ blockquote p:not(:last-child):before {
 
 code,
 .md-fences,
-tt {
-  font-family: "Cousine", monospace;
-  font-size: 1rem;
+tt,
+{
   color: var(--inline-code-color);
+}
+
+code,
+.md-fences,
+tt,
+.CodeMirror pre {
+  font-family: "Consolas", "Cousine", monospace;
+  font-size: .8rem;
 }
 
 code {
