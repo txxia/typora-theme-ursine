@@ -64,6 +64,9 @@
   --megamenu-button-border-color: #9292928f; /* background color for megamenu buttons */
   --megamenu-item-hover-bg-color: var(--bg-color); /* background color for hovering megamenu items */
   --megamenu-item-hover-text-color: white; /* text color for hovering megamenu items */
+
+  --graphic-bg-color: #333333;
+  --graphic-text-color: var(--text-color);
 }
 
 /** TAGS **/
@@ -731,4 +734,13 @@ footer.ty-footer {
   #write ul > li {
     color: var(--text-color);
   }
+}
+
+/* Mermaid default theme fix in dark background */
+svg text.type1, svg text.type2 {
+  /* Cardinality text was in black, small, and overlapping class rect */
+  fill: var(--bold-color);
+  stroke: #000A;
+  stroke-width: 0.03em;
+  font-size: 1em;
 }
