@@ -249,7 +249,7 @@ code,
 tt,
 .CodeMirror pre {
   font-family: "Consolas", "Cousine", monospace;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 code {
