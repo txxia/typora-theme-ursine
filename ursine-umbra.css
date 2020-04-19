@@ -741,3 +741,8 @@ svg text.type1, svg text.type2 {
   stroke-width: 0.03em;
   font-size: 1em;
 }
+
+svg .classLabel text.label {
+  /* Relationship label was in purple */
+  fill: var(--text-color);
+}
